@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+<nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="images/logo.png" class="h-8" alt="UM WEB LOGO" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">UM WEB</span>
+        </a>
+        <button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div id="mega-menu-full" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+            <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                <li>
+                    <a href="index.html" class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Главная</a>
+                </li>
+                <li>
+                    <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Прочее <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg></button>
+                </li>
+                <li>
+                    <a href="umhtmlcss.html" class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">HTML CSS</a>
+                </li>
+                <li>
+                    <a href="umjs.html" class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">JS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="mega-menu-full-dropdown" class="mt-1 bg-white border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600">
+        <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:grid-cols-3 md:px-6">
+            <ul aria-labelledby="mega-menu-full-dropdown-button">
+                <li>
+                    <a href="obfuscate.html" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                        <div class="font-semibold">Обфускация кода</div>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Учебный материал, которые поможет защитить код от ревёрс-инжиниринга — то есть декомпиляции с целью изучения или взлома.</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="htmlcsscompiler.html" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                        <div class="font-semibold">Компилятор</div>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Перевод текста, написанного на языке программирования, в машинный код.</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                        <div class="font-semibold"></div>
+                        <span class="text-sm text-gray-500 dark:text-gray-400"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container px-5 py-0 mx-auto flex justify-center mt-4">
+    <div class="relative w-full">
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div class="block">
+                <img src="images/jsimg.jpg" class="absolute w-full top-0 left-0" alt="jsimg">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container px-5 py-0 mx-auto flex justify-center mt-4">
+    <div id="accordion-collapse" data-accordion="collapse">
+      <h2 id="accordion-collapse-heading-1">
+        <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+          <span>Для чего нужен учебный материал по JavaScript</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">Учебный материал по JavaScript для освоения основ веб-разработки. JavaScript — язык программирования, который позволяет создавать динамически обновляемый контент, управлять мультимедиа, анимировать изображения и делать многое другое.</p>
+        </div>
+      </div>
+      <h2 id="accordion-collapse-heading-3">
+        <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+          <span>С чего начать подготовку?</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+        <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">Начать подготовку по HTML и CSS лучше всего с понимания основ и целей.  HTML — это язык разметки, который определяет структуру веб-страницы (заголовки, параграфы, изображения и т.д.). CSS — это каскадные таблицы стилей, которые определяют внешний вид страницы (цвета, шрифты, расположение элементов и т.д.).  Вместе они составляют основу практически любого веб-сайта.
+
+            Поэтому,  первые шаги должны быть такими:
+            
+                Установка необходимого программного обеспечения: Вам понадобится текстовый редактор (Notepad++, Sublime Text, Atom, VS Code – выбирайте любой, который Вам удобен) для написания кода и веб-браузер (Chrome, Firefox, Edge) для просмотра результатов.  Не обязательно, но желательно установить расширение для разработчика в браузере (например, DevTools в Chrome), которое позволит Вам инспектировать код существующих веб-страниц и лучше понимать, как они устроены.
+            
+                Изучение базовых HTML-тегов:  Начните с самых распространенных тегов.  Поймите, как они используются для структурирования контента.  Многочисленные онлайн-ресурсы, туториалы и интерактивные уроки помогут Вам в этом.
+            
+                Практика написания простого HTML: Создайте несколько простых веб-страниц, используя изученные теги.  Экспериментируйте, добавляйте текст, изображения и ссылки.  Это поможет закрепить знания на практике.
+            
+                Изучение базовых CSS-свойств:  После того, как Вы освоите основы HTML, переходите к CSS.  Начните с основных свойств, таких как color, font-size, background-color, text-align, width, height, margin, padding. Попробуйте изменить внешний вид Вашей HTML-страницы, используя эти свойства.
+            
+                Практика написания CSS:  Создайте отдельный CSS-файл и подключите его к Вашей HTML-странице.  Поэкспериментируйте с различными свойствами CSS, чтобы изменить внешний вид Вашей страницы.  Попробуйте создать несколько разных стилей для разных элементов страницы.
+            </p>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container px-5 py-0 mx-auto flex justify-center mt-4">
+    <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" >
+            <div class="relative w-full h-0 rounded-lg overflow-hidden" style="padding-bottom: 76.25%;">
+                <iframe class="absolute inset-0 w-full h-full rounded-lg" src="https://drive.google.com/file/d/10HvSrVuo3z_z_x4b_TWXAZxlHVVa5g4-/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="images/logo.png" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">UM WEB</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="index.html" class="hover:underline me-4 md:me-6">Главная</a>
+                </li>
+                <li>
+                    <a href="umhtmlcss.html" class="hover:underline me-4 md:me-6">HTML CSS</a>
+                </li>
+                <li>
+                    <a href="umjs.html" class="hover:underline me-4 md:me-6">JS</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" class="hover:underline">UM WEB™</a>. Все права защищены.</span>
+    </div>
+</footer>
+</body>
+</html>
